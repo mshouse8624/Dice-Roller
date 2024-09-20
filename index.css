@@ -1,0 +1,43 @@
+.body {
+    background-color: aqua;
+}
+
+.attacker-dice-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 47px;
+}
+
+.attacker-drop-down-menu-div {
+    margin-right: 80px;
+}
+
+.number-of-attacker-dice-drop-down {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #ed929e;
+}
+
+.attacker-dice-button-div {
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.roll-attacker-dice-button {
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    background-color: rgb(222, 72, 45);
+    border-color: tomato;
+}
+
+.roll-attacker-dice-button:hover {
+    background-color: rgb(233, 189, 182);
+}
+
+.attacker-dice-results-div {
+    text-align: center;
+    font-style: italic;
+}

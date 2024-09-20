@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="8-UTF">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="roll-dice.js"></script>
+        <title>Web Dice Roller</title>
+    </head>
+
+    <body>
+
+        <div class="attacker-dice-div">
+            <div class="attacker-drop-down-menu-div">
+                <select id = "attacker-drop-down" class="number-of-attacker-dice-drop-down">
+                    <option value="1">1 Dice</option>
+                    <option value="2">2 Dice</option>
+                    <option value="3">3 Dice</option>
+                </select>
+            </div>
+
+            <div class="attacker-dice-button-div" >
+                <button class="roll-attacker-dice-button" type="button" 
+                onclick="attackerButtonOnClick()">Roll Attacker Dice!</button>
+            </div>
+        </div>
+
+        <div class="attacker-dice-results-div">
+            <p>Dice 1 Roll: <span id="dice1Result"></span></p>
+            <p>Dice 2 Roll: <span id="dice2Result"></span></p>
+            <p>Dice 3 Roll: <span id="dice3Result"></span></p>
+        </div>
+
+    </body>
+</html>
