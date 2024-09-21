@@ -1,16 +1,22 @@
-.body {
-    background-color: aqua;
+body {
+    background-color: rgb(74, 111, 77);
+    color: white;
+}
+
+.risk-title-header-div {
+    margin-bottom: -10px;
+    text-align: center;
 }
 
 .attacker-dice-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 47px;
+    margin-top: 40px;
 }
 
 .attacker-drop-down-menu-div {
-    margin-right: 80px;
+    margin-right: 150px;
 }
 
 .number-of-attacker-dice-drop-down {
@@ -39,5 +45,107 @@
 
 .attacker-dice-results-div {
     text-align: center;
-    font-style: italic;
+    font-style: bold;
+    margin-right: 100px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.attacker-dice1-label {
+    margin-right:4px;
+    margin-left: 45px;
+}
+
+.attack-dice1-result-input {
+    width: 35px;
+    text-align: right;
+    background-color: rgb(231, 228, 228);
+    margin-right: 5px;
+}
+
+.attacker-dice2-label {
+    margin-right: 4px;
+}
+
+.attack-dice2-result-input{
+    width: 35px;
+    text-align: right;
+    background-color: rgb(231, 228, 228);
+    margin-right: 5px;
+}
+
+.attacker-dice3-label {
+    margin-right: 4px;
+}
+
+.attack-dice3-result-input {
+    width: 35px;
+    text-align: right;
+    background-color: rgb(231, 228, 228);
+}
+
+.defender-dice-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.defender-drop-down-menu-div {
+    margin-right: 142px;
+}
+
+.number-of-defender-dice-drop-down {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #92bfed;
+}
+
+.defender-dice-button-div {
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.roll-defender-dice-button {
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 9px;
+    color: black;
+    background-color: rgb(48, 141, 223);
+    border-color: rgb(48, 141, 223);
+}
+
+.roll-defender-dice-button:hover {
+    background-color: rgb(130, 179, 204);
+}
+
+.defender-dice-results-div {
+    text-align: center;
+    font-style: bold;
+    margin-right: 100px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.defender-dice1-label {
+    margin-right:4px;
+    margin-left: 45px;
+}
+
+.defender-dice1-result-input {
+    width: 35px;
+    text-align: right;
+    background-color: rgb(231, 228, 228);
+    margin-right: 5px;
+}
+
+.defender-dice2-result-label {
+    margin-right: 4px;
+}
+
+.defender-dice2-result-input {
+    width: 35px;
+    text-align: right;
+    background-color: rgb(231, 228, 228);
+    margin-right: 5px;
 }

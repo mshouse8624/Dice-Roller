@@ -8,11 +8,16 @@
         <title>Web Dice Roller</title>
     </head>
 
-    <body>
+    <body onload="attackerButtonOnClick(); defenderButtonOnClick();" >
+        <div class="risk-title-header-div">
+            <h1>Risk: Dice Roll</h1>
+            <h4>Select the amount of dice for both the attacker and defender.<br>
+            Then click the button to roll both dice to get the results!</h5>
+        </div>
 
         <div class="attacker-dice-div">
             <div class="attacker-drop-down-menu-div">
-                <select id = "attacker-drop-down" class="number-of-attacker-dice-drop-down">
+                <select id = "attackerDropDown" class="number-of-attacker-dice-drop-down">
                     <option value="1">1 Dice</option>
                     <option value="2">2 Dice</option>
                     <option value="3">3 Dice</option>
@@ -26,9 +31,36 @@
         </div>
 
         <div class="attacker-dice-results-div">
-            <p>Dice 1 Roll: <span id="dice1Result"></span></p>
-            <p>Dice 2 Roll: <span id="dice2Result"></span></p>
-            <p>Dice 3 Roll: <span id="dice3Result"></span></p>
+            <label class="attacker-dice1-label">Dice 1 Roll: </label>
+            <input id="attackDice1ResultInput" class="attack-dice1-result-input">
+            <label class="attacker-dice2-label">Dice 2 Roll: </label>
+            <input id="attackDice2ResultInput" class="attack-dice2-result-input">
+            <label class="attacker-dice3-label">Dice 3 Roll: </label>
+            <input id="attackDice3ResultInput" class="attack-dice3-result-input">
+        </div>
+
+        <div class="defender-dice-div">
+            <div class="defender-drop-down-menu-div">
+                <select id="defenderDropDown" class="number-of-defender-dice-drop-down">
+                    <option value="1">1 Dice</option>
+                    <option value="2">2 Dice</option>
+                </select>
+            </div>
+
+            <div class="defender-dice-button-div">
+                <button class="roll-defender-dice-button" type="button"
+                onclick="defenderButtonOnClick()">Roll Defender Dice!</button>
+            </div>
+        </div>
+
+        
+
+        <div class="defender-dice-results-div">
+            <label class="defender-dice1-label">Dice 1 Roll: </label>
+            <input id="defenderDice1ResultInput" class="defender-dice1-result-input">
+
+            <label class="defender-dice2-result-label">Dice 2 Roll: </label>
+            <input id="defenderDice2ResultInput" class="defender-dice2-result-input">
         </div>
 
     </body>
